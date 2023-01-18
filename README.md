@@ -22,3 +22,5 @@
 - Restricting access to class-based views
 - Managing course modules and their contents
 - Using formsets for course modules
+- Adding content to course modules
+- Managing modules and their contents
