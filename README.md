@@ -13,3 +13,8 @@
 
 - Adding authentication views
 - Adding an authentication system
+
+## Creating a Content Management System
+- Creating a CMS
+- Creating class-based views
+- Using mixins for class-based views
