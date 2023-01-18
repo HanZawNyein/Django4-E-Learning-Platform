@@ -18,3 +18,7 @@
 - Creating a CMS
 - Creating class-based views
 - Using mixins for class-based views
+- Working with groups and permissions
+- Restricting access to class-based views
+- Managing course modules and their contents
+- Using formsets for course modules
