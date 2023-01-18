@@ -24,5 +24,6 @@
 - Using formsets for course modules
 - Adding content to course modules
 - Managing modules and their contents
-- 
 - Reordering modules and their contents
+- Rendering and Caching Content
+- Displaying courses

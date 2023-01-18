@@ -11,6 +11,8 @@ from django.forms.models import modelform_factory
 from django.apps import apps
 from django.db.models import Count
 from django.core.cache import cache
+from django.db.models import Count
+from .models import Subject
 
 from braces.views import CsrfExemptMixin, JsonRequestResponseMixin
 
@@ -200,6 +202,10 @@ class CourseListView(TemplateResponseMixin, View):
         return self.render_to_response({'subjects': subjects,
                                         'subject': subject,
                                         'courses': courses})
+
+class CourseDetailView(DetailView):
+    model = Course
+    template_name = 'courses/course/detail.html'
 
 
 class ModuleOrderView(CsrfExemptMixin, JsonRequestResponseMixin, View):
