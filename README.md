@@ -27,3 +27,8 @@
 - Reordering modules and their contents
 - Rendering and Caching Content
 - Displaying courses
+
+- Adding student registration
+- Creating a student registration view
+- Accessing the course contents
+- Rendering different types of content

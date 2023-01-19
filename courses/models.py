@@ -4,7 +4,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.contrib.contenttypes.fields import GenericForeignKey
 from django.template.loader import render_to_string
 from .fields import OrderField
-
+from django.template.loader import render_to_string
 
 class Subject(models.Model):
     title = models.CharField(max_length=200)
