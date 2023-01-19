@@ -20,6 +20,7 @@ from .forms import ModuleFormSet
 from .models import Course
 from .models import Module, Content
 from .models import Subject
+from students.forms import CourseEntrollForm
 
 
 class ManageCourseListView(ListView):
@@ -206,6 +207,11 @@ class CourseListView(TemplateResponseMixin, View):
 class CourseDetailView(DetailView):
     model = Course
     template_name = 'courses/course/detail.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['entroll_form'] = CourseEntrollForm(initial={'course':self.object})
+        return context
 
 
 class ModuleOrderView(CsrfExemptMixin, JsonRequestResponseMixin, View):
