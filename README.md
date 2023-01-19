@@ -32,3 +32,14 @@
 - Creating a student registration view
 - Accessing the course contents
 - Rendering different types of content
+
+- Using the cache framework
+- Checking cache requests with Django Debug Toolbar
+
+- Building an API
+- Installing Django REST framework
+
+- Building a Chat Server
+- Implementing the chat room view
+- Writing a consumer
+- Implementing the WebSocket client
